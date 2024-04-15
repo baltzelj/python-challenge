@@ -30,7 +30,7 @@ with open(file) as budget_data:
             loss_month = str(row[0])
     print(f"Total Months: {length}")
     print(f"Total: ${total}")
-    print(f"Average Change: {average}")
+    print(f"Average Change: ${average}")
     print(f"Greatest Increase in Profits: {profit_month} ${greatest_profit}")
     print(f"Greatest Decrease in Profits: {loss_month} ${greatest_losses}")
 # Generating text report.
@@ -41,7 +41,7 @@ with open(txt,"w") as analysis_report:
         "---------------------------------------- \n"
         f"Total Months: {length} \n"
         f"Total: ${total} \n"
-        f"Average Change: {average} \n"
+        f"Average Change: ${average} \n"
         f"Greatest Increase in Profits: {profit_month} ${greatest_profit} \n"
         f"Greatest Decrease in Profits: {loss_month} ${greatest_losses} \n"
     )
